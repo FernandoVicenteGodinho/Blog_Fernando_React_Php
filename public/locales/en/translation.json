@@ -105,7 +105,6 @@
     "unlock_cover": "Unlock Cover",
     "recover_id_cover": "Recover Id Cover",
     "supports": "Supports",
-    "login": "Login",
     "lockscreen": "Lockscreen",
     "password_recovery": "Password Recovery",
     "register": "Register",
@@ -120,5 +119,17 @@
     "checkbox": "Checkbox",
     "skin": "Skin",
     "sticky_header": "Sticky Header",
-    "clone_header": "Clone Header"
+    "clone_header": "Clone Header",
+
+    "login_subtitle": "Enter your email and password to login",
+    "password": "Enter your password",
+    "password_Label": "Password",
+    "enter_your": "Enter your",
+    "login": "Login",
+    "dont_have_an_account": "Dont't have an account?",
+    "sign_up": "Sign Up",
+    "register_subtitle": "Enter your email and password to register",
+    "name": "Name",
+    "have_an_account" : "Already have an account?"
+
 }

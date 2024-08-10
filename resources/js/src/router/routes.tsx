@@ -1,6 +1,6 @@
 import React from 'react';
 import { lazy } from 'react';
-// import LandPage from '../pages/LandPage/LandPage';
+import Blog from '../pages/Blog';
 const LandPage = lazy(() => import('../pages/LandPage/LandPage'));
 const Index = lazy(() => import('../pages/Index'));
 const Analytics = lazy(() => import('../pages/Analytics'));
@@ -78,8 +78,6 @@ const LoginBoxed = lazy(() => import('../pages/Authentication/LoginBoxed'));
 const RegisterBoxed = lazy(() => import('../pages/Authentication/RegisterBoxed'));
 const UnlockBoxed = lazy(() => import('../pages/Authentication/UnlockBox'));
 const RecoverIdBoxed = lazy(() => import('../pages/Authentication/RecoverIdBox'));
-const LoginCover = lazy(() => import('../pages/Authentication/LoginCover'));
-const RegisterCover = lazy(() => import('../pages/Authentication/RegisterCover'));
 const RecoverIdCover = lazy(() => import('../pages/Authentication/RecoverIdCover'));
 const UnlockCover = lazy(() => import('../pages/Authentication/UnlockCover'));
 const About = lazy(() => import('../pages/About'));
@@ -109,9 +107,25 @@ const routes = [
         layout: 'blank',
     },
     {
+        path: '/Blog',
+        element: <Blog />,
+        layout: 'LandPage',
+    },
+    {
         path: '/home',
         element: <Index />,
     },
+    {
+        path: '/login',
+        element: <LoginBoxed />,
+        layout: 'blank',
+    },
+    {
+        path: '/register',
+        element: <RegisterBoxed />,
+        layout: 'blank',
+    },
+
     // {
     //     path: '/index',
     //     element: <Index />,
@@ -427,16 +441,8 @@ const routes = [
         layout: 'blank',
     },
     //Authentication
-    {
-        path: '/auth/boxed-signin',
-        element: <LoginBoxed />,
-        layout: 'blank',
-    },
-    {
-        path: '/auth/boxed-signup',
-        element: <RegisterBoxed />,
-        layout: 'blank',
-    },
+
+
     {
         path: '/auth/boxed-lockscreen',
         element: <UnlockBoxed />,
@@ -445,16 +451,6 @@ const routes = [
     {
         path: '/auth/boxed-password-reset',
         element: <RecoverIdBoxed />,
-        layout: 'blank',
-    },
-    {
-        path: '/auth/cover-login',
-        element: <LoginCover />,
-        layout: 'blank',
-    },
-    {
-        path: '/auth/cover-register',
-        element: <RegisterCover />,
         layout: 'blank',
     },
     {

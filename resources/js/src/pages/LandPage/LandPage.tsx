@@ -27,7 +27,7 @@ const LandPage = () => {
                     </li>
                     <li className='mb-8'>
                         <p className='text-white brightness-50 text-lg italic'>Minhas histórias, artigos e outros</p>
-                        <a className='text-5xl font-bold text-white' href=""><h2 className='mt-2'>Blog</h2></a>
+                        <a className='text-5xl font-bold text-white' href="/blog"><h2 className='mt-2'>Blog</h2></a>
                     </li>
                     <li className='mb-8'>
                         <p className='text-white brightness-50 text-lg italic'>Meu portifólio</p>
