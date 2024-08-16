@@ -6,12 +6,19 @@ import { setPageTitle, toggleRTL } from '../../store/themeConfigSlice';
 import Dropdown from '../../components/Dropdown';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import Notification from '../../components/Notification';
+import { INotification } from '../../types/types';
+import { register } from '../../service/auth';
 
 const RegisterBoxed = () => {
     const { t } = useTranslation();
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
     const [flag, setFlag] = useState(themeConfig.locale);
     const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) === 'rtl' ? true : false;
+    const [notification, setNotification] = useState<INotification>({ color: '', message: '' });
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const setLocale = (flag: string) => {
         setFlag(flag);
@@ -23,16 +30,44 @@ const RegisterBoxed = () => {
     };
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(setPageTitle('Register Boxed'));
+        // dispatch(setPageTitle('Register Boxed'));
+        const title = t('register');
+        dispatch(setPageTitle(title));
+
     });
     const navigate = useNavigate();
 
-    const submitForm = () => {
-        navigate('/');
+    const submitForm = async (event: React.FormEvent) => {
+        event.preventDefault();
+        if (name == '' || email == '') {
+            setNotification({ color: 'danger', message: t('sing_up_error') });
+            return;
+        }
+        if (password.length < 8) {
+            setNotification({ color: 'danger', message: t('password_error') });
+            return;
+        }
+
+        const Register = {
+            name: name,
+            email: email,
+            password: password,
+        }
+
+        await register(Register).then((response) => {
+            console.log(response.status);
+            if (response.status == 200){
+                navigate('/login');
+            }
+        }).catch((error) => {
+            setNotification({ color: 'danger', message: t('sing_up_error') });
+        });
     };
 
     return (
         <div>
+            <Notification color={notification.color} message={notification.message} onToastEnd={() => setNotification({ color: '', message: '' })} />
+
             <div className="flex justify-center items-center min-h-screen bg-cover bg-center bg-[url('/assets/images/map.svg')] dark:bg-[url('/assets/images/map-dark.svg')]">
                 <div className="panel sm:w-[480px] m-6 max-w-lg w-full">
                     <div className="flex justify-between ">
@@ -68,18 +103,18 @@ const RegisterBoxed = () => {
                         </div>
                     </div>
                     <p className="mb-7">{t('register_subtitle')}</p>
-                    <form className="space-y-5" onSubmit={submitForm}>
+                    <form className="space-y-5" onSubmit={submitForm} >
                         <div>
-                            <label htmlFor="name">{t('Name')}</label>
-                            <input id="name" type="text" className="form-input" placeholder={t('enter_your') + ' ' + t('name')} />
+                            <label htmlFor="name" className="flex">{t('Name')} <p className="text-xs text-red-500" hidden={name.length > 0}>*</p></label>
+                            <input id="name" type="text" className="form-input" placeholder={t('enter_your') + ' ' + t('name')} value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div>
-                            <label htmlFor="email">E-mail</label>
-                            <input id="email" type="email" className="form-input" placeholder={t('enter_your')+" e-mail" } />
+                            <label htmlFor="email" className="flex">E-mail <p className="text-xs text-red-500" hidden={email.length > 0}>*</p></label>
+                            <input id="email" type="email" className="form-input" placeholder={t('enter_your')+" e-mail" } value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                         <div>
-                            <label htmlFor="password">{t('password_Label')}</label>
-                            <input id="password" type="password" className="form-input" placeholder={t('password')} />
+                            <label htmlFor="password" className="flex">{t('password_Label')} <p className="text-xs text-red-500" hidden={password.length > 0}>*</p></label>
+                            <input id="password" type="password" className="form-input" placeholder={t('password')} value={password} onChange={(e) => setPassword(e.target.value)} />
                         </div>
                         <button type="submit" className="btn btn-primary w-full">
                             {t('sign_up')}

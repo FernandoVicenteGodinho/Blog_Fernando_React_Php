@@ -1,7 +1,11 @@
 import React from 'react';
 import { lazy } from 'react';
 import Blog from '../pages/Blog';
+import PrivateRoute from './PrivateRoute';
 const LandPage = lazy(() => import('../pages/LandPage/LandPage'));
+const LoginBoxed = lazy(() => import('../pages/Authentication/LoginBoxed'));
+const RegisterBoxed = lazy(() => import('../pages/Authentication/RegisterBoxed'));
+
 const Index = lazy(() => import('../pages/Index'));
 const Analytics = lazy(() => import('../pages/Analytics'));
 const Finance = lazy(() => import('../pages/Finance'));
@@ -74,8 +78,7 @@ const ERROR404 = lazy(() => import('../pages/Pages/Error404'));
 const ERROR500 = lazy(() => import('../pages/Pages/Error500'));
 const ERROR503 = lazy(() => import('../pages/Pages/Error503'));
 const Maintenence = lazy(() => import('../pages/Pages/Maintenence'));
-const LoginBoxed = lazy(() => import('../pages/Authentication/LoginBoxed'));
-const RegisterBoxed = lazy(() => import('../pages/Authentication/RegisterBoxed'));
+
 const UnlockBoxed = lazy(() => import('../pages/Authentication/UnlockBox'));
 const RecoverIdBoxed = lazy(() => import('../pages/Authentication/RecoverIdBox'));
 const RecoverIdCover = lazy(() => import('../pages/Authentication/RecoverIdCover'));
@@ -111,10 +114,10 @@ const routes = [
         element: <Blog />,
         layout: 'LandPage',
     },
-    {
-        path: '/home',
-        element: <Index />,
-    },
+    // {
+    //     path: '/home',
+    //     element: <Index />,
+    // },
     {
         path: '/login',
         element: <LoginBoxed />,
@@ -124,6 +127,16 @@ const routes = [
         path: '/register',
         element: <RegisterBoxed />,
         layout: 'blank',
+    },
+    {
+        path: '/home',
+        element: <PrivateRoute />,
+        children: [
+            {
+                path: '',
+                element: <Index />,
+            },
+        ],
     },
 
     // {

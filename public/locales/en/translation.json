@@ -130,6 +130,8 @@
     "sign_up": "Sign Up",
     "register_subtitle": "Enter your email and password to register",
     "name": "Name",
-    "have_an_account" : "Already have an account?"
+    "have_an_account" : "Already have an account?",
+    "sing_up_error" : "Fill all the fields",
+    "password_error" : "Password must have at least 8 characters"
 
 }

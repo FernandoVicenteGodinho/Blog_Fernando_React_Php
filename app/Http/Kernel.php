@@ -46,6 +46,17 @@ class Kernel extends HttpKernel
     ];
 
     /**
+     * The application's route middleware.
+     *
+     * These middleware may be assigned to groups or used individually.
+     *
+     * @var array
+    */
+    protected $routeMiddleware = [
+        'access.web' => \App\Http\Middleware\AccessThroughTheApi::class,
+    ];
+
+    /**
      * The application's middleware aliases.
      *
      * Aliases may be used to conveniently assign middleware to routes and groups.

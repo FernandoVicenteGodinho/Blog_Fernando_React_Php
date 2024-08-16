@@ -6,7 +6,7 @@ const defaultState = {
     isDarkMode: false,
     mainLayout: 'app',
     theme: 'light',
-    menu: 'vertical',
+    menu: 'horizontal',
     layout: 'full',
     rtlClass: 'ltr',
     animation: '',

@@ -130,7 +130,9 @@
     "sign_up": "Registrar-se",
     "register_subtitle": "Digite seu email e senha para registrar-se",
     "name": "Nome",
-    "have_an_account" : "Já tem uma conta?"
+    "have_an_account" : "Já tem uma conta?",
+    "sing_up_error" : "Preencha todos os campos",
+    "password_error" : "Senha deve ter no mínimo 8 caracteres"
 
 
 }
