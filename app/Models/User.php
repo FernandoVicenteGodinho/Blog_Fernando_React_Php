@@ -22,6 +22,11 @@ class User extends Authenticatable
         'email',
         'password',
         'permission',
+        'address',
+        'profession',
+        'website',
+        'linkedin',
+        'github',
     ];
 
     /**
@@ -30,6 +35,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
+        'id',
         'password',
         'remember_token',
         'permission',
@@ -40,5 +46,9 @@ class User extends Authenticatable
     public static function findByEmail($email)
     {
         return self::where('email', $email)->first();
+    }
+    public function posts()
+    {
+        return $this->hasMany(Posts::class);
     }
 }

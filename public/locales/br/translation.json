@@ -88,7 +88,7 @@
     "date_and_range_picker": "Seletor de data e intervalo",
     "clipboard": "prancheta",
     "user_and_pages": "Usuários e páginas",
-    "profile": "perfis",
+
     "account_settings": "Configurações da conta",
     "knowledge_base": "base de conhecimento",
     "contact_form": "Formulário de Contato",
@@ -125,6 +125,7 @@
     "password": "Digite sua senha",
     "password_Label": "Senha",
     "enter_your": "Digite seu",
+    "enter_your_url": "Digite sua URL",
     "login": "Entrar",
     "dont_have_an_account": "Não tem uma conta?",
     "sign_up": "Registrar-se",
@@ -132,7 +133,25 @@
     "name": "Nome",
     "have_an_account" : "Já tem uma conta?",
     "sing_up_error" : "Preencha todos os campos",
-    "password_error" : "Senha deve ter no mínimo 8 caracteres"
+    "password_error" : "Senha deve ter no mínimo 8 caracteres",
+    "profile": "Perfis",
+    "sing_out": "Sair",
+    "country": "País",
+    "save": "Salvar",
+    "social_media": "Mídias sociais",
+    "profession": "Profissão",
+    "general_information": "Informações gerais",
+    "notifications_error" : "Algo errado aconteceu, tente novamente",
+    "success" : "Dados atualizados com sucesso",
+    "title": "Título",
+    "content": "Conteúdo",
+    "content_summary": "Resumo do conteúdo",
+    "tags": "Tags",
+    "tags_label": "Cada tag deve ser separado por uma vírgula",
+    "create_post_page": "Criar post",
+    "post_created": "Post criado com sucesso"
+
+
 
 
 }

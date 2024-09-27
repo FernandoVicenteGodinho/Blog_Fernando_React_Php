@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateUserRequest;
 use App\Models\User;
 use App\Service\AuthService;
+use App\Service\UserService;
 use Exception;
 use GuzzleHttp\Promise\Create;
 use Illuminate\Http\Request;
@@ -18,7 +19,7 @@ class UserController extends Controller
             AuthService::CreateUser($dados);
             return $this->SendOK();
         } catch (Exception $e) {
-            return $this->SendError($e->getMessage());
+            return $this->SendError($e);
         }
     }
 
@@ -45,7 +46,26 @@ class UserController extends Controller
 
             return $this->SendOK();
         } catch (Exception $e) {
-            return $this->SendError($e->getMessage());
+            return $this->SendError($e);
+        }
+    }
+    public function GetUser()
+    {
+        try {
+            $user = UserService::GetUser();
+            return $this->SendData($user);
+        } catch (Exception $e) {
+            return $this->SendError($e);
+        }
+    }
+    public function UpdateUser(Request $request)
+    {
+        try {
+            $dados = $request->all();
+            $user = UserService::UpdateUser($dados);
+            return $this->SendData($user);
+        } catch (Exception $e) {
+            return $this->SendError($e);
         }
     }
 }

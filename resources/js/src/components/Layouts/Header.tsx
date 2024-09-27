@@ -117,7 +117,7 @@ const Header = () => {
             <div className="shadow-sm">
                 <div className="relative bg-white flex w-full items-center px-5 py-2.5 dark:bg-black">
                     <div className="horizontal-logo flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2">
-                        <Link to="/" className="main-logo flex items-center shrink-0">
+                        <Link to="/home" className="main-logo flex items-center shrink-0">
                             <img className="w-8 ltr:-ml-1 rtl:-mr-1 inline" src="/assets/images/logo.svg" alt="logo" />
                             <span className="text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden md:inline dark:text-white-light transition-all duration-300">VRISTO</span>
                         </Link>
@@ -139,7 +139,7 @@ const Header = () => {
                     <div className="ltr:mr-2 rtl:ml-2 hidden sm:block">
                         <ul className="flex items-center space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
                             <li>
-                                <Link to="/apps/calendar" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
+                                <Link to="/home/apps/calendar" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12Z"
@@ -153,7 +153,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/apps/todolist" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
+                                <Link to="/home/apps/todolist" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             opacity="0.5"
@@ -177,7 +177,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/apps/chat" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
+                                <Link to="/home/apps/chat" className="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle r="3" transform="matrix(-1 0 0 1 19 5)" stroke="currentColor" strokeWidth="1.5" />
                                         <path
@@ -551,7 +551,7 @@ const Header = () => {
                                         </div>
                                     </li>
                                     <li>
-                                        <Link to="/users/profile" className="dark:hover:text-white">
+                                        <Link to="/home/users/profile" className="dark:hover:text-white">
                                             <svg className="ltr:mr-2 rtl:ml-2 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="12" cy="6" r="4" stroke="currentColor" strokeWidth="1.5" />
                                                 <path
@@ -565,7 +565,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/apps/mailbox" className="dark:hover:text-white">
+                                        <Link to="/home/apps/mailbox" className="dark:hover:text-white">
                                             <svg className="ltr:mr-2 rtl:ml-2 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     opacity="0.5"
@@ -584,7 +584,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/auth/boxed-lockscreen" className="dark:hover:text-white">
+                                        <Link to="/home/auth/boxed-lockscreen" className="dark:hover:text-white">
                                             <svg className="ltr:mr-2 rtl:ml-2 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M2 16C2 13.1716 2 11.7574 2.87868 10.8787C3.75736 10 5.17157 10 8 10H16C18.8284 10 20.2426 10 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16Z"
@@ -608,7 +608,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li className="border-t border-white-light dark:border-white-light/10">
-                                        <Link to="/auth/boxed-signin" className="text-danger !py-3">
+                                        <Link to="/home/auth/boxed-signin" className="text-danger !py-3">
                                             <svg className="ltr:mr-2 rtl:ml-2 rotate-90 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     opacity="0.5"
@@ -654,16 +654,16 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/">{t('sales')}</NavLink>
+                                <NavLink to="/home/">{t('sales')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/analytics">{t('analytics')}</NavLink>
+                                <NavLink to="/home/analytics">{t('analytics')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/finance">{t('finance')}</NavLink>
+                                <NavLink to="/home/finance">{t('finance')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/crypto">{t('crypto')}</NavLink>
+                                <NavLink to="/home/crypto">{t('crypto')}</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -716,22 +716,22 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/apps/chat">{t('chat')}</NavLink>
+                                <NavLink to="/home/apps/chat">{t('chat')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/apps/mailbox">{t('mailbox')}</NavLink>
+                                <NavLink to="/home/apps/mailbox">{t('mailbox')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/apps/todolist">{t('todo_list')}</NavLink>
+                                <NavLink to="/home/apps/todolist">{t('todo_list')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/apps/notes">{t('notes')}</NavLink>
+                                <NavLink to="/home/apps/notes">{t('notes')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/apps/scrumboard">{t('scrumboard')}</NavLink>
+                                <NavLink to="/home/apps/scrumboard">{t('scrumboard')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/apps/contacts">{t('contacts')}</NavLink>
+                                <NavLink to="/home/apps/contacts">{t('contacts')}</NavLink>
                             </li>
                             <li className="relative">
                                 <button type="button">
@@ -744,21 +744,21 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/apps/invoice/list">{t('list')}</NavLink>
+                                        <NavLink to="/home/apps/invoice/list">{t('list')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/apps/invoice/preview">{t('preview')}</NavLink>
+                                        <NavLink to="/home/apps/invoice/preview">{t('preview')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/apps/invoice/add">{t('add')}</NavLink>
+                                        <NavLink to="/home/apps/invoice/add">{t('add')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/apps/invoice/edit">{t('edit')}</NavLink>
+                                        <NavLink to="/home/apps/invoice/edit">{t('edit')}</NavLink>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <NavLink to="/apps/calendar">{t('calendar')}</NavLink>
+                                <NavLink to="/home/apps/calendar">{t('calendar')}</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -791,46 +791,46 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/components/tabs">{t('tabs')}</NavLink>
+                                <NavLink to="/home/components/tabs">{t('tabs')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/accordions">{t('accordions')}</NavLink>
+                                <NavLink to="/home/components/accordions">{t('accordions')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/modals">{t('modals')}</NavLink>
+                                <NavLink to="/home/components/modals">{t('modals')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/cards">{t('cards')}</NavLink>
+                                <NavLink to="/home/components/cards">{t('cards')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/carousel">{t('carousel')}</NavLink>
+                                <NavLink to="/home/components/carousel">{t('carousel')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/countdown">{t('countdown')}</NavLink>
+                                <NavLink to="/home/components/countdown">{t('countdown')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/counter">{t('counter')}</NavLink>
+                                <NavLink to="/home/components/counter">{t('counter')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/sweetalert">{t('sweet_alerts')}</NavLink>
+                                <NavLink to="/home/components/sweetalert">{t('sweet_alerts')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/timeline">{t('timeline')}</NavLink>
+                                <NavLink to="/home/components/timeline">{t('timeline')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/notifications">{t('notifications')}</NavLink>
+                                <NavLink to="/home/components/notifications">{t('notifications')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/media-object">{t('media_object')}</NavLink>
+                                <NavLink to="/home/components/media-object">{t('media_object')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/list-group">{t('list_group')}</NavLink>
+                                <NavLink to="/home/components/list-group">{t('list_group')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/pricing-table">{t('pricing_tables')}</NavLink>
+                                <NavLink to="/home/components/pricing-table">{t('pricing_tables')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/components/lightbox">{t('lightbox')}</NavLink>
+                                <NavLink to="/home/components/lightbox">{t('lightbox')}</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -860,58 +860,58 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/elements/alerts">{t('alerts')}</NavLink>
+                                <NavLink to="/home/elements/alerts">{t('alerts')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/avatar">{t('avatar')}</NavLink>
+                                <NavLink to="/home/elements/avatar">{t('avatar')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/badges">{t('badges')}</NavLink>
+                                <NavLink to="/home/elements/badges">{t('badges')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/breadcrumbs">{t('breadcrumbs')}</NavLink>
+                                <NavLink to="/home/elements/breadcrumbs">{t('breadcrumbs')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/buttons">{t('buttons')}</NavLink>
+                                <NavLink to="/home/elements/buttons">{t('buttons')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/buttons-group">{t('button_groups')}</NavLink>
+                                <NavLink to="/home/elements/buttons-group">{t('button_groups')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/color-library">{t('color_library')}</NavLink>
+                                <NavLink to="/home/elements/color-library">{t('color_library')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/dropdown">{t('dropdown')}</NavLink>
+                                <NavLink to="/home/elements/dropdown">{t('dropdown')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/infobox">{t('infobox')}</NavLink>
+                                <NavLink to="/home/elements/infobox">{t('infobox')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/jumbotron">{t('jumbotron')}</NavLink>
+                                <NavLink to="/home/elements/jumbotron">{t('jumbotron')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/loader">{t('loader')}</NavLink>
+                                <NavLink to="/home/elements/loader">{t('loader')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/pagination">{t('pagination')}</NavLink>
+                                <NavLink to="/home/elements/pagination">{t('pagination')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/popovers">{t('popovers')}</NavLink>
+                                <NavLink to="/home/elements/popovers">{t('popovers')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/progress-bar">{t('progress_bar')}</NavLink>
+                                <NavLink to="/home/elements/progress-bar">{t('progress_bar')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/search">{t('search')}</NavLink>
+                                <NavLink to="/home/elements/search">{t('search')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/tooltips">{t('tooltips')}</NavLink>
+                                <NavLink to="/home/elements/tooltips">{t('tooltips')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/treeview">{t('treeview')}</NavLink>
+                                <NavLink to="/home/elements/treeview">{t('treeview')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/elements/typography">{t('typography')}</NavLink>
+                                <NavLink to="/home/elements/typography">{t('typography')}</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -950,7 +950,7 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/tables">{t('tables')}</NavLink>
+                                <NavLink to="/home/tables">{t('tables')}</NavLink>
                             </li>
                             <li className="relative">
                                 <button type="button">
@@ -963,37 +963,37 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/datatables/basic">{t('basic')}</NavLink>
+                                        <NavLink to="/home/datatables/basic">{t('basic')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/advanced">{t('advanced')}</NavLink>
+                                        <NavLink to="/home/datatables/advanced">{t('advanced')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/skin">{t('skin')}</NavLink>
+                                        <NavLink to="/home/datatables/skin">{t('skin')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/order-sorting">{t('order_sorting')}</NavLink>
+                                        <NavLink to="/home/datatables/order-sorting">{t('order_sorting')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/multi-column">{t('multi_column')}</NavLink>
+                                        <NavLink to="/home/datatables/multi-column">{t('multi_column')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/multiple-tables">{t('multiple_tables')}</NavLink>
+                                        <NavLink to="/home/datatables/multiple-tables">{t('multiple_tables')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/alt-pagination">{t('alt_pagination')}</NavLink>
+                                        <NavLink to="/home/datatables/alt-pagination">{t('alt_pagination')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/checkbox">{t('checkbox')}</NavLink>
+                                        <NavLink to="/home/datatables/checkbox">{t('checkbox')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/range-search">{t('range_search')}</NavLink>
+                                        <NavLink to="/home/datatables/range-search">{t('range_search')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/export">{t('export')}</NavLink>
+                                        <NavLink to="/home/datatables/export">{t('export')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/datatables/column-chooser">{t('column_chooser')}</NavLink>
+                                        <NavLink to="/home/datatables/column-chooser">{t('column_chooser')}</NavLink>
                                     </li>
                                 </ul>
                             </li>
@@ -1033,49 +1033,49 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/forms/basic">{t('basic')}</NavLink>
+                                <NavLink to="/home/forms/basic">{t('basic')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/input-group">{t('input_group')}</NavLink>
+                                <NavLink to="/home/forms/input-group">{t('input_group')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/layouts">{t('layouts')}</NavLink>
+                                <NavLink to="/home/forms/layouts">{t('layouts')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/validation">{t('validation')}</NavLink>
+                                <NavLink to="/home/forms/validation">{t('validation')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/input-mask">{t('input_mask')}</NavLink>
+                                <NavLink to="/home/forms/input-mask">{t('input_mask')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/select2">{t('select2')}</NavLink>
+                                <NavLink to="/home/forms/select2">{t('select2')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/touchspin">{t('touchspin')}</NavLink>
+                                <NavLink to="/home/forms/touchspin">{t('touchspin')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/checkbox-radio">{t('checkbox_and_radio')}</NavLink>
+                                <NavLink to="/home/forms/checkbox-radio">{t('checkbox_and_radio')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/switches">{t('switches')}</NavLink>
+                                <NavLink to="/home/forms/switches">{t('switches')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/wizards">{t('wizards')}</NavLink>
+                                <NavLink to="/home/forms/wizards">{t('wizards')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/file-upload">{t('file_upload')}</NavLink>
+                                <NavLink to="/home/forms/file-upload">{t('file_upload')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/quill-editor">{t('quill_editor')}</NavLink>
+                                <NavLink to="/home/forms/quill-editor">{t('quill_editor')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/markdown-editor">{t('markdown_editor')}</NavLink>
+                                <NavLink to="/home/forms/markdown-editor">{t('markdown_editor')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/date-picker">{t('date_and_range_picker')}</NavLink>
+                                <NavLink to="/home/forms/date-picker">{t('date_and_range_picker')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/forms/clipboard">{t('clipboard')}</NavLink>
+                                <NavLink to="/home/forms/clipboard">{t('clipboard')}</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -1123,31 +1123,31 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/users/profile">{t('profile')}</NavLink>
+                                        <NavLink to="/home/users/profile">{t('profile')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/users/user-account-settings">{t('account_settings')}</NavLink>
+                                        <NavLink to="/home/users/user-account-settings">{t('account_settings')}</NavLink>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <NavLink to="/pages/knowledge-base">{t('knowledge_base')}</NavLink>
+                                <NavLink to="/home/pages/knowledge-base">{t('knowledge_base')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pages/contact-us" target="_blank">
+                                <NavLink to="/home/pages/contact-us" target="_blank">
                                     {t('contact_form')}
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pages/faq">{t('faq')}</NavLink>
+                                <NavLink to="/home/pages/faq">{t('faq')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pages/coming-soon" target="_blank">
+                                <NavLink to="/home/pages/coming-soon" target="_blank">
                                     {t('coming_soon')}
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pages/maintenence" target="_blank">
+                                <NavLink to="/home/pages/maintenence" target="_blank">
                                     {t('maintenence')}
                                 </NavLink>
                             </li>
@@ -1162,17 +1162,17 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/pages/error404" target="_blank">
+                                        <NavLink to="/home/pages/error404" target="_blank">
                                             {t('404')}
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/pages/error500" target="_blank">
+                                        <NavLink to="/home/pages/error500" target="_blank">
                                             {t('500')}
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/pages/error503" target="_blank">
+                                        <NavLink to="/home/pages/error503" target="_blank">
                                             {t('503')}
                                         </NavLink>
                                     </li>
@@ -1189,12 +1189,12 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/auth/cover-login" target="_blank">
+                                        <NavLink to="/home/auth/cover-login" target="_blank">
                                             {t('login_cover')}
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/auth/boxed-signin" target="_blank">
+                                        <NavLink to="/home/auth/boxed-signin" target="_blank">
                                             {t('login_boxed')}
                                         </NavLink>
                                     </li>
@@ -1211,12 +1211,12 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/auth/cover-register" target="_blank">
+                                        <NavLink to="/home/auth/cover-register" target="_blank">
                                             {t('register_cover')}
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/auth/boxed-signup" target="_blank">
+                                        <NavLink to="/home/auth/boxed-signup" target="_blank">
                                             {t('register_boxed')}
                                         </NavLink>
                                     </li>
@@ -1233,12 +1233,12 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/auth/cover-password-reset" target="_blank">
+                                        <NavLink to="/home/auth/cover-password-reset" target="_blank">
                                             {t('recover_id_cover')}
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/auth/boxed-password-reset" target="_blank">
+                                        <NavLink to="/home/auth/boxed-password-reset" target="_blank">
                                             {t('recover_id_boxed')}
                                         </NavLink>
                                     </li>
@@ -1255,12 +1255,12 @@ const Header = () => {
                                 </button>
                                 <ul className="rounded absolute top-0 ltr:left-[95%] rtl:right-[95%] min-w-[180px] bg-white z-[10] text-dark dark:text-white-dark dark:bg-[#1b2e4b] shadow p-0 py-2 hidden">
                                     <li>
-                                        <NavLink to="/auth/cover-lockscreen" target="_blank">
+                                        <NavLink to="/home/auth/cover-lockscreen" target="_blank">
                                             {t('unlock_cover')}
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/auth/boxed-lockscreen" target="_blank">
+                                        <NavLink to="/home/auth/boxed-lockscreen" target="_blank">
                                             {t('unlock_boxed')}
                                         </NavLink>
                                     </li>
@@ -1288,19 +1288,19 @@ const Header = () => {
                         </button>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/dragndrop">{t('drag_and_drop')}</NavLink>
+                                <NavLink to="/home/dragndrop">{t('drag_and_drop')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/charts">{t('charts')}</NavLink>
+                                <NavLink to="/home/charts">{t('charts')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/font-icons">{t('font_icons')}</NavLink>
+                                <NavLink to="/home/font-icons">{t('font_icons')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/widgets">{t('widgets')}</NavLink>
+                                <NavLink to="/home/widgets">{t('widgets')}</NavLink>
                             </li>
                             <li>
-                                <NavLink to="https://vristo.sbthemes.com" target="_blank">
+                                <NavLink to="hhome/ttps://vristo.sbthemes.com" target="_blank">
                                     {t('documentation')}
                                 </NavLink>
                             </li>

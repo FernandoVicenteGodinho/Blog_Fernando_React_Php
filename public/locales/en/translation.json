@@ -88,7 +88,7 @@
     "date_and_range_picker": "Date & Range Picker",
     "clipboard": "Clipboard",
     "user_and_pages": "User And Pages",
-    "profile": "Profile",
+
     "account_settings": "Account Settings",
     "knowledge_base": "Knowledge Base",
     "contact_form": "Contact Form",
@@ -125,6 +125,7 @@
     "password": "Enter your password",
     "password_Label": "Password",
     "enter_your": "Enter your",
+    "enter_your_url": "Enter your URL",
     "login": "Login",
     "dont_have_an_account": "Dont't have an account?",
     "sign_up": "Sign Up",
@@ -132,6 +133,22 @@
     "name": "Name",
     "have_an_account" : "Already have an account?",
     "sing_up_error" : "Fill all the fields",
-    "password_error" : "Password must have at least 8 characters"
+    "password_error" : "Password must have at least 8 characters",
+    "profile": "Profile",
+    "sing_out": "Sign Out",
+    "country": "Country",
+    "save": "Save",
+    "social_media": "Social Media",
+    "profession": "Profession",
+    "general_information": "General Information",
+    "notifications_error" : "Something went wrong, please try again",
+    "success" : "Data updated successfully",
+    "title": "Title",
+    "content": "Content",
+    "content_summary": "Content Summary",
+    "tags": "Tags",
+    "tags_label": "Each tag should be separated by a comma",
+    "create_post_page": "Create post",
+    "post_created": "Post created successfully"
 
 }

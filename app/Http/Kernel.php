@@ -54,6 +54,7 @@ class Kernel extends HttpKernel
     */
     protected $routeMiddleware = [
         'access.web' => \App\Http\Middleware\AccessThroughTheApi::class,
+        'optional.auth' => \App\Http\Middleware\OptionalAuth::class,
     ];
 
     /**

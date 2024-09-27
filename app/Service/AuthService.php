@@ -3,10 +3,7 @@
 namespace App\Service;
 
 use App\Models\User;
-use App\Repository\UserRepository;
-use Doctrine\ORM\EntityManagerInterface;
 use Illuminate\Http\Response;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AuthService
 {

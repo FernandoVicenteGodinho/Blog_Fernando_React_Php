@@ -52,7 +52,7 @@ const Sidebar = () => {
             >
                 <div className="bg-white dark:bg-black h-full">
                     <div className="flex justify-between items-center px-4 py-3">
-                        <NavLink to="/" className="main-logo flex items-center shrink-0">
+                        <NavLink to="/home/" className="main-logo flex items-center shrink-0">
                             <img className="w-8 ml-[5px] flex-none" src="/assets/images/logo.svg" alt="logo" />
                             <span className="text-2xl ltr:ml-1.5 rtl:mr-1.5 font-semibold align-middle lg:inline dark:text-white-light">{t('VRISTO')}</span>
                         </NavLink>
@@ -97,16 +97,16 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'dashboard' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/">{t('sales')}</NavLink>
+                                            <NavLink to="/home">{t('sales')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/analytics">{t('analytics')}</NavLink>
+                                            <NavLink to="/home/analytics">{t('analytics')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/finance">{t('finance')}</NavLink>
+                                            <NavLink to="/home/finance">{t('finance')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/crypto">{t('crypto')}</NavLink>
+                                            <NavLink to="/home/crypto">{t('crypto')}</NavLink>
                                         </li>
                                     </ul>
                                 </AnimateHeight>
@@ -122,7 +122,7 @@ const Sidebar = () => {
                             <li className="nav-item">
                                 <ul>
                                     <li className="nav-item">
-                                        <NavLink to="/apps/chat" className="group">
+                                        <NavLink to="/home/apps/chat" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -142,7 +142,7 @@ const Sidebar = () => {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/apps/mailbox" className="group">
+                                        <NavLink to="/home/apps/mailbox" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M24 5C24 6.65685 22.6569 8 21 8C19.3431 8 18 6.65685 18 5C18 3.34315 19.3431 2 21 2C22.6569 2 24 3.34315 24 5Z" fill="currentColor" />
@@ -165,7 +165,7 @@ const Sidebar = () => {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/apps/todolist" className="group">
+                                        <NavLink to="/home/apps/todolist" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -185,7 +185,7 @@ const Sidebar = () => {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/apps/notes" className="group">
+                                        <NavLink to="/home/apps/notes" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -217,7 +217,7 @@ const Sidebar = () => {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/apps/scrumboard" className="group">
+                                        <NavLink to="/home/apps/scrumboard" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -241,7 +241,7 @@ const Sidebar = () => {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/apps/contacts" className="group">
+                                        <NavLink to="/home/apps/contacts" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -292,23 +292,23 @@ const Sidebar = () => {
                                         <AnimateHeight duration={300} height={currentMenu === 'invoice' ? 'auto' : 0}>
                                             <ul className="sub-menu text-gray-500">
                                                 <li>
-                                                    <NavLink to="/apps/invoice/list">{t('list')}</NavLink>
+                                                    <NavLink to="/home/apps/invoice/list">{t('list')}</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink to="/apps/invoice/preview">{t('preview')}</NavLink>
+                                                    <NavLink to="/home/apps/invoice/preview">{t('preview')}</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink to="/apps/invoice/add">{t('add')}</NavLink>
+                                                    <NavLink to="/home/apps/invoice/add">{t('add')}</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink to="/apps/invoice/edit">{t('edit')}</NavLink>
+                                                    <NavLink to="/home/apps/invoice/edit">{t('edit')}</NavLink>
                                                 </li>
                                             </ul>
                                         </AnimateHeight>
                                     </li>
 
                                     <li className="nav-item">
-                                        <NavLink to="/apps/calendar" className="group">
+                                        <NavLink to="/home/apps/calendar" className="group">
                                             <div className="flex items-center">
                                                 <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -367,46 +367,46 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'component' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/components/tabs">{t('tabs')}</NavLink>
+                                            <NavLink to="/home/components/tabs">{t('tabs')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/accordions">{t('accordions')}</NavLink>
+                                            <NavLink to="/home/components/accordions">{t('accordions')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/modals">{t('modals')}</NavLink>
+                                            <NavLink to="/home/components/modals">{t('modals')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/cards">{t('cards')}</NavLink>
+                                            <NavLink to="/home/components/cards">{t('cards')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/carousel">{t('carousel')}</NavLink>
+                                            <NavLink to="/home/components/carousel">{t('carousel')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/countdown">{t('countdown')}</NavLink>
+                                            <NavLink to="/home/components/countdown">{t('countdown')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/counter">{t('counter')}</NavLink>
+                                            <NavLink to="/home/components/counter">{t('counter')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/sweetalert">{t('sweet_alerts')}</NavLink>
+                                            <NavLink to="/home/components/sweetalert">{t('sweet_alerts')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/timeline">{t('timeline')}</NavLink>
+                                            <NavLink to="/home/components/timeline">{t('timeline')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/notifications">{t('notifications')}</NavLink>
+                                            <NavLink to="/home/components/notifications">{t('notifications')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/media-object">{t('media_object')}</NavLink>
+                                            <NavLink to="/home/components/media-object">{t('media_object')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/list-group">{t('list_group')}</NavLink>
+                                            <NavLink to="/home/components/list-group">{t('list_group')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/pricing-table">{t('pricing_tables')}</NavLink>
+                                            <NavLink to="/home/components/pricing-table">{t('pricing_tables')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/components/lightbox">{t('lightbox')}</NavLink>
+                                            <NavLink to="/home/components/lightbox">{t('lightbox')}</NavLink>
                                         </li>
                                     </ul>
                                 </AnimateHeight>
@@ -441,65 +441,65 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'element' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/elements/alerts">{t('alerts')}</NavLink>
+                                            <NavLink to="/home/elements/alerts">{t('alerts')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/avatar">{t('avatar')}</NavLink>
+                                            <NavLink to="/home/elements/avatar">{t('avatar')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/badges">{t('badges')}</NavLink>
+                                            <NavLink to="/home/elements/badges">{t('badges')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/breadcrumbs">{t('breadcrumbs')}</NavLink>
+                                            <NavLink to="/home/elements/breadcrumbs">{t('breadcrumbs')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/buttons">{t('buttons')}</NavLink>
+                                            <NavLink to="/home/elements/buttons">{t('buttons')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/buttons-group">{t('button_groups')}</NavLink>
+                                            <NavLink to="/home/elements/buttons-group">{t('button_groups')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/color-library">{t('color_library')}</NavLink>
+                                            <NavLink to="/home/elements/color-library">{t('color_library')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/dropdown">{t('dropdown')}</NavLink>
+                                            <NavLink to="/home/elements/dropdown">{t('dropdown')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/infobox">{t('infobox')}</NavLink>
+                                            <NavLink to="/home/elements/infobox">{t('infobox')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/jumbotron">{t('jumbotron')}</NavLink>
+                                            <NavLink to="/home/elements/jumbotron">{t('jumbotron')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/loader">{t('loader')}</NavLink>
+                                            <NavLink to="/home/elements/loader">{t('loader')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/pagination">{t('pagination')}</NavLink>
+                                            <NavLink to="/home/elements/pagination">{t('pagination')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/popovers">{t('popovers')}</NavLink>
+                                            <NavLink to="/home/elements/popovers">{t('popovers')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/progress-bar">{t('progress_bar')}</NavLink>
+                                            <NavLink to="/home/elements/progress-bar">{t('progress_bar')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/search">{t('search')}</NavLink>
+                                            <NavLink to="/home/elements/search">{t('search')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/tooltips">{t('tooltips')}</NavLink>
+                                            <NavLink to="/home/elements/tooltips">{t('tooltips')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/treeview">{t('treeview')}</NavLink>
+                                            <NavLink to="/home/elements/treeview">{t('treeview')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/elements/typography">{t('typography')}</NavLink>
+                                            <NavLink to="/home/elements/typography">{t('typography')}</NavLink>
                                         </li>
                                     </ul>
                                 </AnimateHeight>
                             </li>
 
                             <li className="menu nav-item">
-                                <NavLink to="/charts" className="group">
+                                <NavLink to="/home/charts" className="group">
                                     <div className="flex items-center">
                                         <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -518,7 +518,7 @@ const Sidebar = () => {
                             </li>
 
                             <li className="menu nav-item">
-                                <NavLink to="/widgets" className="group">
+                                <NavLink to="/home/widgets" className="group">
                                     <div className="flex items-center">
                                         <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -546,7 +546,7 @@ const Sidebar = () => {
                             </li>
 
                             <li className="menu nav-item">
-                                <NavLink to="/font-icons" className="group">
+                                <NavLink to="/home/font-icons" className="group">
                                     <div className="flex items-center">
                                         <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -567,7 +567,7 @@ const Sidebar = () => {
                             </li>
 
                             <li className="menu nav-item">
-                                <NavLink to="/dragndrop" className="group">
+                                <NavLink to="/home/dragndrop" className="group">
                                     <div className="flex items-center">
                                         <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -605,7 +605,7 @@ const Sidebar = () => {
                             </h2>
 
                             <li className="menu nav-item">
-                                <NavLink to="/tables" className="group">
+                                <NavLink to="/home/tables" className="group">
                                     <div className="flex items-center">
                                         <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -669,37 +669,37 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'datalabel' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/datatables/basic">{t('basic')}</NavLink>
+                                            <NavLink to="/home/datatables/basic">{t('basic')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/advanced">{t('advanced')}</NavLink>
+                                            <NavLink to="/home/datatables/advanced">{t('advanced')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/skin">{t('skin')}</NavLink>
+                                            <NavLink to="/home/datatables/skin">{t('skin')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/order-sorting">{t('order_sorting')}</NavLink>
+                                            <NavLink to="/home/datatables/order-sorting">{t('order_sorting')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/multi-column">{t('multi_column')}</NavLink>
+                                            <NavLink to="/home/datatables/multi-column">{t('multi_column')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/multiple-tables">{t('multiple_tables')}</NavLink>
+                                            <NavLink to="/home/datatables/multiple-tables">{t('multiple_tables')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/alt-pagination">{t('alt_pagination')}</NavLink>
+                                            <NavLink to="/home/datatables/alt-pagination">{t('alt_pagination')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/checkbox">{t('checkbox')}</NavLink>
+                                            <NavLink to="/home/datatables/checkbox">{t('checkbox')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/range-search">{t('range_search')}</NavLink>
+                                            <NavLink to="/home/datatables/range-search">{t('range_search')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/export">{t('export')}</NavLink>
+                                            <NavLink to="/home/datatables/export">{t('export')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/datatables/column-chooser">{t('column_chooser')}</NavLink>
+                                            <NavLink to="/home/datatables/column-chooser">{t('column_chooser')}</NavLink>
                                         </li>
                                     </ul>
                                 </AnimateHeight>
@@ -742,49 +742,49 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'forms' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/forms/basic">{t('basic')}</NavLink>
+                                            <NavLink to="/home/forms/basic">{t('basic')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/input-group">{t('input_group')}</NavLink>
+                                            <NavLink to="/home/forms/input-group">{t('input_group')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/layouts">{t('layouts')}</NavLink>
+                                            <NavLink to="/home/forms/layouts">{t('layouts')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/validation">{t('validation')}</NavLink>
+                                            <NavLink to="/home/forms/validation">{t('validation')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/input-mask">{t('input_mask')}</NavLink>
+                                            <NavLink to="/home/forms/input-mask">{t('input_mask')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/select2">{t('select2')}</NavLink>
+                                            <NavLink to="/home/forms/select2">{t('select2')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/touchspin">{t('touchspin')}</NavLink>
+                                            <NavLink to="/home/forms/touchspin">{t('touchspin')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/checkbox-radio">{t('checkbox_and_radio')}</NavLink>
+                                            <NavLink to="/home/forms/checkbox-radio">{t('checkbox_and_radio')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/switches">{t('switches')}</NavLink>
+                                            <NavLink to="/home/forms/switches">{t('switches')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/wizards">{t('wizards')}</NavLink>
+                                            <NavLink to="/home/forms/wizards">{t('wizards')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/file-upload">{t('file_upload')}</NavLink>
+                                            <NavLink to="/home/forms/file-upload">{t('file_upload')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/quill-editor">{t('quill_editor')}</NavLink>
+                                            <NavLink to="/home/forms/quill-editor">{t('quill_editor')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/markdown-editor">{t('markdown_editor')}</NavLink>
+                                            <NavLink to="/home/forms/markdown-editor">{t('markdown_editor')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/date-picker">{t('date_and_range_picker')}</NavLink>
+                                            <NavLink to="/home/forms/date-picker">{t('date_and_range_picker')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/forms/clipboard">{t('clipboard')}</NavLink>
+                                            <NavLink to="/home/forms/clipboard">{t('clipboard')}</NavLink>
                                         </li>
                                     </ul>
                                 </AnimateHeight>
@@ -819,10 +819,10 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'users' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/users/profile">{t('profile')}</NavLink>
+                                            <NavLink to="/home/users/profile">{t('profile')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/users/user-account-settings">{t('account_settings')}</NavLink>
+                                            <NavLink to="/home/users/user-account-settings">{t('account_settings')}</NavLink>
                                         </li>
                                     </ul>
                                 </AnimateHeight>
@@ -865,18 +865,18 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'page' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/pages/knowledge-base">{t('knowledge_base')}</NavLink>
+                                            <NavLink to="/home/pages/knowledge-base">{t('knowledge_base')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/pages/contact-us" target="_blank">
+                                            <NavLink to="/home/pages/contact-us" target="_blank">
                                                 {t('contact_form')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/pages/faq">{t('faq')}</NavLink>
+                                            <NavLink to="/home/pages/faq">{t('faq')}</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/pages/coming-soon" target="_blank">
+                                            <NavLink to="/home/pages/coming-soon" target="_blank">
                                                 {t('coming_soon')}
                                             </NavLink>
                                         </li>
@@ -927,7 +927,7 @@ const Sidebar = () => {
                                         </li>
 
                                         <li>
-                                            <NavLink to="/pages/maintenence" target="_blank">
+                                            <NavLink to="/home/pages/maintenence" target="_blank">
                                                 {t('maintenence')}
                                             </NavLink>
                                         </li>
@@ -965,42 +965,42 @@ const Sidebar = () => {
                                 <AnimateHeight duration={300} height={currentMenu === 'auth' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
-                                            <NavLink to="/auth/boxed-signin" target="_blank">
+                                            <NavLink to="/home/auth/boxed-signin" target="_blank">
                                                 {t('login_boxed')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/boxed-signup" target="_blank">
+                                            <NavLink to="/home/auth/boxed-signup" target="_blank">
                                                 {t('register_boxed')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/boxed-lockscreen" target="_blank">
+                                            <NavLink to="/home/auth/boxed-lockscreen" target="_blank">
                                                 {t('unlock_boxed')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/boxed-password-reset" target="_blank">
+                                            <NavLink to="/home/auth/boxed-password-reset" target="_blank">
                                                 {t('recover_id_boxed')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/cover-login" target="_blank">
+                                            <NavLink to="/home/auth/cover-login" target="_blank">
                                                 {t('login_cover')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/cover-register" target="_blank">
+                                            <NavLink to="/home/auth/cover-register" target="_blank">
                                                 {t('register_cover')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/cover-lockscreen" target="_blank">
+                                            <NavLink to="/home/auth/cover-lockscreen" target="_blank">
                                                 {t('unlock_cover')}
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/auth/cover-password-reset" target="_blank">
+                                            <NavLink to="/home/auth/cover-password-reset" target="_blank">
                                                 {t('recover_id_cover')}
                                             </NavLink>
                                         </li>
@@ -1016,7 +1016,7 @@ const Sidebar = () => {
                             </h2>
 
                             <li className="menu nav-item">
-                                <NavLink to="https://vristo.sbthemes.com" target="_blank" className="nav-link group">
+                                <NavLink to="hhome/ttps://vristo.sbthemes.com" target="_blank" className="nav-link group">
                                     <div className="flex items-center">
                                         <svg className="group-hover:!text-primary shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path

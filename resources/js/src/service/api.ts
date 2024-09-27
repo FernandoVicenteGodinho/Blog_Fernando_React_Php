@@ -21,11 +21,12 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
     (response) => response,
     (error) => {
-        if (error.status === 401 || error.message === "Unauthenticated") {
+        // console.log(error.response.data.message, 'error');
+        if (error.response.data.status === 401 || error.response.data.message === "Unauthenticated.") {
             localStorage.removeItem('token');
             localStorage.removeItem('name');
             localStorage.removeItem('email');
-            window.location.href = '/blog';
+            // window.location.href = '/blog';
         }
         return Promise.reject(error);
     }

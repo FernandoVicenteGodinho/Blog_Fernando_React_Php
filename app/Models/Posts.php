@@ -12,12 +12,12 @@ class Posts extends Model
     protected $table = 'posts';
 
     protected $fillable = [
-        'title', 'body', 'author', 'tags', 'resume',
+        'title', 'body', 'author', 'resume', 'status',
     ];
 
-    public function author()
+    public function user()
     {
-        return $this->belongsTo(Authors::class);
+        return $this->belongsTo(User::class);
     }
 
     public function tags()

@@ -33,4 +33,15 @@ class AuthenticationController extends Controller
         }
     }
 
+    public function Logout()
+    {
+        try {
+            $user = Auth::user();
+            $user->tokens()->where('name', 'auth_token')->delete();
+            return $this->SendOK();
+        } catch (Exception $e) {
+            return $this->SendError($e);
+        }
+    }
+
 }
