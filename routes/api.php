@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AIController;
 use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
@@ -20,6 +21,7 @@ Route::post('/register', [UserController::class, 'CreateUser']);
 Route::post('/login', [UserController::class, 'Login']);
 Route::post('/logout', [AuthenticationController::class, 'Logout']);
 Route::get('/posts', [PostController::class, 'GetPosts'])->middleware(['optional.auth']);
+Route::post('/generate', [AIController::class, 'generate']);
 // Route::get('/posts', [PostController::class, 'GetPosts']);
 
 Route::middleware(['auth:sanctum', 'access.web'])->group(function () {

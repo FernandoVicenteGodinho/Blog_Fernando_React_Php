@@ -2,6 +2,7 @@ import React from 'react';
 import { lazy } from 'react';
 import Blog from '../pages/Blog';
 import PrivateRoute from './PrivateRoute';
+import Sudoku from '../pages/Sudoku';
 const LandPage = lazy(() => import('../pages/LandPage/LandPage'));
 const LoginBoxed = lazy(() => import('../pages/Authentication/LoginBoxed'));
 const RegisterBoxed = lazy(() => import('../pages/Authentication/RegisterBoxed'));
@@ -114,6 +115,11 @@ const routes = [
         path: '/Blog',
         element: <Blog />,
         layout: 'LandPage',
+    },
+    {
+        path: '/sudoku',
+        element: <Sudoku />,
+        layout: 'blank',
     },
     // {
     //     path: '/home',

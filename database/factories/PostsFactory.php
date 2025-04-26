@@ -2,9 +2,9 @@
 
 namespace Database\Factories;
 
-use App\Models\Authors;
 use App\Models\Posts;
 use App\Models\Tags;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -22,7 +22,7 @@ class PostsFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'body' => $this->faker->paragraph,
-            'authors_id' => Authors::factory(),
+            'user_id' => User::factory(),
             'resume' => $this->faker->paragraphs(2, true),
         ];
     }
